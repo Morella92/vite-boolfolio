@@ -11,7 +11,7 @@ export default {
 <template>
 
   <div class="container">
-    Progetti
+    <h1>Progetti</h1>
     <Project/>
   </div>
   
