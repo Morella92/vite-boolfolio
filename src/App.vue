@@ -1,20 +1,25 @@
 <script>
-import Project from './components/Project.vue'
+  //import Project from './components/Project.vue'
+  import Navbar from './components/Navbar.vue'
 
-export default {
-  components: {
-    Project
+  export default {
+    components: {
+      //Project,
+      Navbar
+    }
   }
-}
 </script>
 
 <template>
-
-  <div class="container">
-    <h1>Progetti</h1>
-    <Project/>
-  </div>
+  <Navbar/>
   
+  <main>
+    <router-view></router-view>
+  </main>
+  
+  <footer>
+    footer
+  </footer>
 </template>
 
 <style scoped>
