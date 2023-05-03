@@ -15,7 +15,7 @@ const router= createRouter({
         {
             path: '/portfolio',
             name: 'portfolio',
-            component: Project,
+            component: Project, //richiamo il componente che fa la chiamata axios
         },
         {
             path: '/about-me',
