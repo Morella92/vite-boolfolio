@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from './pages/Home.vue'
 import Project from './components/Project.vue'
 import AboutMe from './pages/AboutMe.vue'
+import ProjectsShow from './pages/projects/Project.show.vue'
 
 const router= createRouter({
     history: createWebHistory(),
@@ -17,6 +18,12 @@ const router= createRouter({
             name: 'portfolio',
             component: Project, //richiamo il componente che fa la chiamata axios
         },
+        {
+			path: '/blog/:id',
+			name: 'projects.show',
+			component: ProjectsShow,
+			props: true,
+		},
         {
             path: '/about-me',
             name: 'about',
